@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7133830115764468297}
   - component: {fileID: 3372847967688623275}
   - component: {fileID: 726233056069900239}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Wheel2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.9499997, y: -0.062000036, z: 0.00000071525574}
+  m_ConnectedAnchor: {x: 0.9499997, y: -0.062, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 2497307057916965148}
   - component: {fileID: 7464575909110573255}
   - component: {fileID: 1041500222522012876}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Wheel3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.14999968, y: -0.062000036, z: 0.000000834465}
+  m_ConnectedAnchor: {x: 0.14999968, y: -0.062, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 7368312375898659940}
   - component: {fileID: 631465715253123874}
   - component: {fileID: 3824975949512055571}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Wheel0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 2.5500007, y: -0.062000036, z: 0.00000035762787}
+  m_ConnectedAnchor: {x: 2.5500002, y: -0.062, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -306,7 +306,7 @@ GameObject:
   - component: {fileID: 1608361778997152439}
   - component: {fileID: 3440052430301849028}
   - component: {fileID: 6609092545691320194}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Wheel6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -368,7 +368,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -2.2500005, y: -0.062000036, z: 0.00000011920929}
+  m_ConnectedAnchor: {x: -2.25, y: -0.062, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -401,7 +401,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4373328287281416482}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Wheels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,7 +441,7 @@ GameObject:
   - component: {fileID: 5940879128031021986}
   - component: {fileID: 6734490203630419953}
   - component: {fileID: 476287262686620814}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Wheel4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -503,7 +503,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.65000045, y: -0.062000036, z: 0.000000834465}
+  m_ConnectedAnchor: {x: -0.65000045, y: -0.062, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -539,7 +539,7 @@ GameObject:
   - component: {fileID: 1730790024936629645}
   - component: {fileID: 2729222316990654688}
   - component: {fileID: 5423703406361886530}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Wheel1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -601,7 +601,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 1.7499999, y: -0.062000036, z: 0.00000059604645}
+  m_ConnectedAnchor: {x: 1.7499999, y: -0.062, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -636,7 +636,7 @@ GameObject:
   - component: {fileID: 9046451257647731383}
   - component: {fileID: 7080583641662707885}
   - component: {fileID: 854917916457302689}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Crawler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -708,7 +708,7 @@ GameObject:
   - component: {fileID: 6675785652351730359}
   - component: {fileID: 1292771632846320986}
   - component: {fileID: 4654097275321564250}
-  m_Layer: 10
+  m_Layer: 6
   m_Name: Wheel5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -770,7 +770,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -1.4500005, y: -0.062000036, z: 0}
+  m_ConnectedAnchor: {x: -1.4500005, y: -0.062, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
