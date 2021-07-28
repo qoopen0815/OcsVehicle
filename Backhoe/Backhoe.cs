@@ -23,8 +23,8 @@ namespace Ocs.Vehicles
 
         public float BaseJointInput { set => _baseJointInput = value; }
         public float BoomJointInput { set => _boomJointInput = value; }
-        public float ArmJointInput { set => _armJointInput = value; }
-        public float EndJointInput { set => _endJointInput = value; }
+        public float ArmJointInput { set => _armJointInput = -value; }
+        public float EndJointInput { set => _endJointInput = -value; }
 
         private void Start()
         {
