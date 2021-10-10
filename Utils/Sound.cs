@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Ocs.Vehicles
 {
     [RequireComponent(typeof(Car))]
-    public class CarSound : MonoBehaviour
+    public class Sound : MonoBehaviour
     {
         [SerializeField] private Car _car;    
         [SerializeField] private AudioSource _engineSound;

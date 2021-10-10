@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Ocs.Vehicles
 {
     [RequireComponent(typeof(Car))]
-    public class CarLight : MonoBehaviour
+    public class Light : MonoBehaviour
     {
         [SerializeField] private List<LightInfo> _lightInfos;
         public List<LightInfo> LightInfos { get => _lightInfos; }
