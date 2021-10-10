@@ -9,11 +9,11 @@ namespace Ocs.Vehicles
     {
         [SerializeField] private WheelLoader _vehicle;
 
-        private Ocs.Input.InputActions _input;
+        private Ocs.Input.VehicleInput _input;
 
         private void Awake()
         {
-            this._input = new Ocs.Input.InputActions();
+            this._input = new Ocs.Input.VehicleInput();
         }
 
         private void OnEnable() => this._input.Enable();

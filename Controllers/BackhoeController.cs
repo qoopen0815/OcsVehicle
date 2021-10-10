@@ -10,11 +10,11 @@ namespace Ocs.Vehicles
         [SerializeField] private Crawler _leftCrawler;
         [SerializeField] private Crawler _rightCrawler;
 
-        private Ocs.Input.InputActions _input;
+        private Ocs.Input.VehicleInput _input;
 
         private void Awake()
         {
-            this._input = new Ocs.Input.InputActions();
+            this._input = new Ocs.Input.VehicleInput();
         }
 
         private void Start()
