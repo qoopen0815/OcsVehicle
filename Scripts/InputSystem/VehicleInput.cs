@@ -275,22 +275,6 @@ namespace Ocs.Input
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
-                },
-                {
-                    ""name"": ""LeftStick"",
-                    ""type"": ""Value"",
-                    ""id"": ""a6a721bf-9eaf-4ee1-b2d1-f6018ddeb107"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""RightStick"",
-                    ""type"": ""Value"",
-                    ""id"": ""7a9a9ee0-6675-4436-a8f1-3c6e60ffd98c"",
-                    ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
-                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -329,160 +313,6 @@ namespace Ocs.Input
                 },
                 {
                     ""name"": """",
-                    ""id"": ""58717f3d-8993-46c3-9896-69cce5cdcc5d"",
-                    ""path"": ""<Gamepad>/leftStick"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Gamepad"",
-                    ""action"": ""LeftStick"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""WASD"",
-                    ""id"": ""d5dd529b-d2c7-4a47-8aa4-3d12b934fc42"",
-                    ""path"": ""Dpad"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""LeftStick"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""b9b51c16-f292-478d-bc5f-e04f04c64b58"",
-                    ""path"": ""<Keyboard>/w"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""LeftStick"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""09a2d6db-ae38-4856-98bd-9bdddfcfad43"",
-                    ""path"": ""<Keyboard>/s"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""LeftStick"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""e05d7377-40a0-46b9-8419-9b2a37acf46c"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""LeftStick"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""46501df0-d0e4-46a9-91fc-fd7d75665777"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""LeftStick"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""83b3803e-4771-49ff-9517-f385c82656ee"",
-                    ""path"": ""<Joystick>/stick"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Joystick"",
-                    ""action"": ""LeftStick"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""5d8108c7-6255-48fb-a147-c958e824ffee"",
-                    ""path"": ""<Gamepad>/rightStick"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Gamepad"",
-                    ""action"": ""RightStick"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""IJKL"",
-                    ""id"": ""3df45a39-eff7-4bac-9ca9-014ffd2f468c"",
-                    ""path"": ""Dpad"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""RightStick"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""1bcfdc51-275e-4eb5-822c-46118bfd32fc"",
-                    ""path"": ""<Keyboard>/i"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""RightStick"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""d18d2e22-eaaa-4be6-b237-c036bbe476d9"",
-                    ""path"": ""<Keyboard>/k"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""RightStick"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""276ed16f-c268-4819-a87f-e0a0feec1b06"",
-                    ""path"": ""<Keyboard>/j"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""RightStick"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""76b3d9cf-eba9-4cec-908a-7d54cad8ea34"",
-                    ""path"": ""<Keyboard>/l"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse"",
-                    ""action"": ""RightStick"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""3c5578a9-6938-430b-90de-4e6f38642993"",
-                    ""path"": ""<Joystick>/{Hatswitch}"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Joystick"",
-                    ""action"": ""RightStick"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""5afb5b28-e869-46cb-bd44-237caa64a2c1"",
                     ""path"": ""<Gamepad>/rightShoulder"",
                     ""interactions"": """",
@@ -495,7 +325,7 @@ namespace Ocs.Input
             ]
         },
         {
-            ""name"": ""Common"",
+            ""name"": ""Equipment"",
             ""id"": ""12bf3a77-c603-42fd-bf4e-684ac072156b"",
             ""actions"": [
                 {
@@ -503,14 +333,6 @@ namespace Ocs.Input
                     ""type"": ""Button"",
                     ""id"": ""1c9b00d6-1388-4513-bd9d-d0e39373e889"",
                     ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""Look"",
-                    ""type"": ""Value"",
-                    ""id"": ""b5a22e9f-4713-44bd-8904-51405e3d2766"",
-                    ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
@@ -559,39 +381,6 @@ namespace Ocs.Input
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Light"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""c9fd35b2-02d1-419a-bc1e-17a0c328ae27"",
-                    ""path"": ""<Gamepad>/rightStick"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Gamepad"",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""00f9e90a-f6d9-47c0-9b33-79f2b71262f5"",
-                    ""path"": ""<Pointer>/delta"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse;Touch"",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""4614b6e4-6797-44d7-915e-eefc129479ec"",
-                    ""path"": ""<Joystick>/{Hatswitch}"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Joystick"",
-                    ""action"": ""Look"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -796,15 +585,12 @@ namespace Ocs.Input
             m_Crawler_RightReverse = m_Crawler.FindAction("RightReverse", throwIfNotFound: true);
             m_Crawler_LeftForward = m_Crawler.FindAction("LeftForward", throwIfNotFound: true);
             m_Crawler_LeftReverse = m_Crawler.FindAction("LeftReverse", throwIfNotFound: true);
-            m_Crawler_LeftStick = m_Crawler.FindAction("LeftStick", throwIfNotFound: true);
-            m_Crawler_RightStick = m_Crawler.FindAction("RightStick", throwIfNotFound: true);
-            // Common
-            m_Common = asset.FindActionMap("Common", throwIfNotFound: true);
-            m_Common_Light = m_Common.FindAction("Light", throwIfNotFound: true);
-            m_Common_Look = m_Common.FindAction("Look", throwIfNotFound: true);
-            m_Common_Hone = m_Common.FindAction("Hone", throwIfNotFound: true);
-            m_Common_LeftWinker = m_Common.FindAction("LeftWinker", throwIfNotFound: true);
-            m_Common_RightWinker = m_Common.FindAction("RightWinker", throwIfNotFound: true);
+            // Equipment
+            m_Equipment = asset.FindActionMap("Equipment", throwIfNotFound: true);
+            m_Equipment_Light = m_Equipment.FindAction("Light", throwIfNotFound: true);
+            m_Equipment_Hone = m_Equipment.FindAction("Hone", throwIfNotFound: true);
+            m_Equipment_LeftWinker = m_Equipment.FindAction("LeftWinker", throwIfNotFound: true);
+            m_Equipment_RightWinker = m_Equipment.FindAction("RightWinker", throwIfNotFound: true);
             // DumpTruck
             m_DumpTruck = asset.FindActionMap("DumpTruck", throwIfNotFound: true);
             m_DumpTruck_Work = m_DumpTruck.FindAction("Work", throwIfNotFound: true);
@@ -930,8 +716,6 @@ namespace Ocs.Input
         private readonly InputAction m_Crawler_RightReverse;
         private readonly InputAction m_Crawler_LeftForward;
         private readonly InputAction m_Crawler_LeftReverse;
-        private readonly InputAction m_Crawler_LeftStick;
-        private readonly InputAction m_Crawler_RightStick;
         public struct CrawlerActions
         {
             private @VehicleInput m_Wrapper;
@@ -940,8 +724,6 @@ namespace Ocs.Input
             public InputAction @RightReverse => m_Wrapper.m_Crawler_RightReverse;
             public InputAction @LeftForward => m_Wrapper.m_Crawler_LeftForward;
             public InputAction @LeftReverse => m_Wrapper.m_Crawler_LeftReverse;
-            public InputAction @LeftStick => m_Wrapper.m_Crawler_LeftStick;
-            public InputAction @RightStick => m_Wrapper.m_Crawler_RightStick;
             public InputActionMap Get() { return m_Wrapper.m_Crawler; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -963,12 +745,6 @@ namespace Ocs.Input
                     @LeftReverse.started -= m_Wrapper.m_CrawlerActionsCallbackInterface.OnLeftReverse;
                     @LeftReverse.performed -= m_Wrapper.m_CrawlerActionsCallbackInterface.OnLeftReverse;
                     @LeftReverse.canceled -= m_Wrapper.m_CrawlerActionsCallbackInterface.OnLeftReverse;
-                    @LeftStick.started -= m_Wrapper.m_CrawlerActionsCallbackInterface.OnLeftStick;
-                    @LeftStick.performed -= m_Wrapper.m_CrawlerActionsCallbackInterface.OnLeftStick;
-                    @LeftStick.canceled -= m_Wrapper.m_CrawlerActionsCallbackInterface.OnLeftStick;
-                    @RightStick.started -= m_Wrapper.m_CrawlerActionsCallbackInterface.OnRightStick;
-                    @RightStick.performed -= m_Wrapper.m_CrawlerActionsCallbackInterface.OnRightStick;
-                    @RightStick.canceled -= m_Wrapper.m_CrawlerActionsCallbackInterface.OnRightStick;
                 }
                 m_Wrapper.m_CrawlerActionsCallbackInterface = instance;
                 if (instance != null)
@@ -985,68 +761,54 @@ namespace Ocs.Input
                     @LeftReverse.started += instance.OnLeftReverse;
                     @LeftReverse.performed += instance.OnLeftReverse;
                     @LeftReverse.canceled += instance.OnLeftReverse;
-                    @LeftStick.started += instance.OnLeftStick;
-                    @LeftStick.performed += instance.OnLeftStick;
-                    @LeftStick.canceled += instance.OnLeftStick;
-                    @RightStick.started += instance.OnRightStick;
-                    @RightStick.performed += instance.OnRightStick;
-                    @RightStick.canceled += instance.OnRightStick;
                 }
             }
         }
         public CrawlerActions @Crawler => new CrawlerActions(this);
 
-        // Common
-        private readonly InputActionMap m_Common;
-        private ICommonActions m_CommonActionsCallbackInterface;
-        private readonly InputAction m_Common_Light;
-        private readonly InputAction m_Common_Look;
-        private readonly InputAction m_Common_Hone;
-        private readonly InputAction m_Common_LeftWinker;
-        private readonly InputAction m_Common_RightWinker;
-        public struct CommonActions
+        // Equipment
+        private readonly InputActionMap m_Equipment;
+        private IEquipmentActions m_EquipmentActionsCallbackInterface;
+        private readonly InputAction m_Equipment_Light;
+        private readonly InputAction m_Equipment_Hone;
+        private readonly InputAction m_Equipment_LeftWinker;
+        private readonly InputAction m_Equipment_RightWinker;
+        public struct EquipmentActions
         {
             private @VehicleInput m_Wrapper;
-            public CommonActions(@VehicleInput wrapper) { m_Wrapper = wrapper; }
-            public InputAction @Light => m_Wrapper.m_Common_Light;
-            public InputAction @Look => m_Wrapper.m_Common_Look;
-            public InputAction @Hone => m_Wrapper.m_Common_Hone;
-            public InputAction @LeftWinker => m_Wrapper.m_Common_LeftWinker;
-            public InputAction @RightWinker => m_Wrapper.m_Common_RightWinker;
-            public InputActionMap Get() { return m_Wrapper.m_Common; }
+            public EquipmentActions(@VehicleInput wrapper) { m_Wrapper = wrapper; }
+            public InputAction @Light => m_Wrapper.m_Equipment_Light;
+            public InputAction @Hone => m_Wrapper.m_Equipment_Hone;
+            public InputAction @LeftWinker => m_Wrapper.m_Equipment_LeftWinker;
+            public InputAction @RightWinker => m_Wrapper.m_Equipment_RightWinker;
+            public InputActionMap Get() { return m_Wrapper.m_Equipment; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
             public bool enabled => Get().enabled;
-            public static implicit operator InputActionMap(CommonActions set) { return set.Get(); }
-            public void SetCallbacks(ICommonActions instance)
+            public static implicit operator InputActionMap(EquipmentActions set) { return set.Get(); }
+            public void SetCallbacks(IEquipmentActions instance)
             {
-                if (m_Wrapper.m_CommonActionsCallbackInterface != null)
+                if (m_Wrapper.m_EquipmentActionsCallbackInterface != null)
                 {
-                    @Light.started -= m_Wrapper.m_CommonActionsCallbackInterface.OnLight;
-                    @Light.performed -= m_Wrapper.m_CommonActionsCallbackInterface.OnLight;
-                    @Light.canceled -= m_Wrapper.m_CommonActionsCallbackInterface.OnLight;
-                    @Look.started -= m_Wrapper.m_CommonActionsCallbackInterface.OnLook;
-                    @Look.performed -= m_Wrapper.m_CommonActionsCallbackInterface.OnLook;
-                    @Look.canceled -= m_Wrapper.m_CommonActionsCallbackInterface.OnLook;
-                    @Hone.started -= m_Wrapper.m_CommonActionsCallbackInterface.OnHone;
-                    @Hone.performed -= m_Wrapper.m_CommonActionsCallbackInterface.OnHone;
-                    @Hone.canceled -= m_Wrapper.m_CommonActionsCallbackInterface.OnHone;
-                    @LeftWinker.started -= m_Wrapper.m_CommonActionsCallbackInterface.OnLeftWinker;
-                    @LeftWinker.performed -= m_Wrapper.m_CommonActionsCallbackInterface.OnLeftWinker;
-                    @LeftWinker.canceled -= m_Wrapper.m_CommonActionsCallbackInterface.OnLeftWinker;
-                    @RightWinker.started -= m_Wrapper.m_CommonActionsCallbackInterface.OnRightWinker;
-                    @RightWinker.performed -= m_Wrapper.m_CommonActionsCallbackInterface.OnRightWinker;
-                    @RightWinker.canceled -= m_Wrapper.m_CommonActionsCallbackInterface.OnRightWinker;
+                    @Light.started -= m_Wrapper.m_EquipmentActionsCallbackInterface.OnLight;
+                    @Light.performed -= m_Wrapper.m_EquipmentActionsCallbackInterface.OnLight;
+                    @Light.canceled -= m_Wrapper.m_EquipmentActionsCallbackInterface.OnLight;
+                    @Hone.started -= m_Wrapper.m_EquipmentActionsCallbackInterface.OnHone;
+                    @Hone.performed -= m_Wrapper.m_EquipmentActionsCallbackInterface.OnHone;
+                    @Hone.canceled -= m_Wrapper.m_EquipmentActionsCallbackInterface.OnHone;
+                    @LeftWinker.started -= m_Wrapper.m_EquipmentActionsCallbackInterface.OnLeftWinker;
+                    @LeftWinker.performed -= m_Wrapper.m_EquipmentActionsCallbackInterface.OnLeftWinker;
+                    @LeftWinker.canceled -= m_Wrapper.m_EquipmentActionsCallbackInterface.OnLeftWinker;
+                    @RightWinker.started -= m_Wrapper.m_EquipmentActionsCallbackInterface.OnRightWinker;
+                    @RightWinker.performed -= m_Wrapper.m_EquipmentActionsCallbackInterface.OnRightWinker;
+                    @RightWinker.canceled -= m_Wrapper.m_EquipmentActionsCallbackInterface.OnRightWinker;
                 }
-                m_Wrapper.m_CommonActionsCallbackInterface = instance;
+                m_Wrapper.m_EquipmentActionsCallbackInterface = instance;
                 if (instance != null)
                 {
                     @Light.started += instance.OnLight;
                     @Light.performed += instance.OnLight;
                     @Light.canceled += instance.OnLight;
-                    @Look.started += instance.OnLook;
-                    @Look.performed += instance.OnLook;
-                    @Look.canceled += instance.OnLook;
                     @Hone.started += instance.OnHone;
                     @Hone.performed += instance.OnHone;
                     @Hone.canceled += instance.OnHone;
@@ -1059,7 +821,7 @@ namespace Ocs.Input
                 }
             }
         }
-        public CommonActions @Common => new CommonActions(this);
+        public EquipmentActions @Equipment => new EquipmentActions(this);
 
         // DumpTruck
         private readonly InputActionMap m_DumpTruck;
@@ -1148,13 +910,10 @@ namespace Ocs.Input
             void OnRightReverse(InputAction.CallbackContext context);
             void OnLeftForward(InputAction.CallbackContext context);
             void OnLeftReverse(InputAction.CallbackContext context);
-            void OnLeftStick(InputAction.CallbackContext context);
-            void OnRightStick(InputAction.CallbackContext context);
         }
-        public interface ICommonActions
+        public interface IEquipmentActions
         {
             void OnLight(InputAction.CallbackContext context);
-            void OnLook(InputAction.CallbackContext context);
             void OnHone(InputAction.CallbackContext context);
             void OnLeftWinker(InputAction.CallbackContext context);
             void OnRightWinker(InputAction.CallbackContext context);

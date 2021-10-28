@@ -20,10 +20,10 @@ namespace Ocs.Vehicle.Controller
             // Callback
             this._input.Car.ShiftUp.started += context => this._vehicle.ReverseGear = false;
             this._input.Car.ShiftDown.started += context => this._vehicle.ReverseGear = true;
-            this._input.Common.Light.started += context => this._vehicle.SwitchLight();
-            this._input.Common.Hone.started += context => this._vehicle.PlayHone();
-            this._input.Common.LeftWinker.started += context => this._vehicle.SwitchLeftWinker();
-            this._input.Common.RightWinker.started += context => this._vehicle.SwitchRightWinker();
+            this._input.Equipment.Light.started += context => this._vehicle.SwitchLight();
+            this._input.Equipment.Hone.started += context => this._vehicle.PlayHone();
+            this._input.Equipment.LeftWinker.started += context => this._vehicle.SwitchLeftWinker();
+            this._input.Equipment.RightWinker.started += context => this._vehicle.SwitchRightWinker();
         }
 
         private void OnEnable() => this._input.Enable();

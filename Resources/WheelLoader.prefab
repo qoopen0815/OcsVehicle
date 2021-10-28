@@ -202,8 +202,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623555346003556661}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.45437193, y: 0, z: 0.35317993}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8591796850651053345}
   - {fileID: 3767626124815772253}
@@ -258,10 +258,10 @@ MonoBehaviour:
   _maxBrakeTorque: 500
   _maxSteerAngle: 30
   _lights:
-  - leftLight: {fileID: 5178314624666490818}
-    rightLight: {fileID: 5897730669447770191}
-  - leftLight: {fileID: 6671605931569597676}
-    rightLight: {fileID: 8249971772922608399}
+  - light: {fileID: 5178314624666490818}
+  - light: {fileID: 5897730669447770191}
+  - light: {fileID: 6671605931569597676}
+  - light: {fileID: 8249971772922608399}
   _headLightIntensity: 3
   _winkers: []
   _winkerFrequency: 5
@@ -272,7 +272,7 @@ MonoBehaviour:
   _steerJoint: {fileID: 8591796849674673167}
   _smoothTime: 0.5
   _maxSpeed: Infinity
-  _arm:
+  _boom:
     targetJoint: {fileID: 8591796851139352029}
     cylinderJoint: {fileID: 8591796850216060034}
     rodJoint: {fileID: 8591796849859329916}
@@ -286,7 +286,7 @@ MonoBehaviour:
     minExtendRange: 0.78
     maxExtendRange: 1
     inverse: 1
-  _controlSpeed: 0.5
+  _controlSpeed: 0.1
 --- !u!114 &8480895897398551672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2755,7 +2755,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8591796850672311003}
-  m_LocalRotation: {x: 0.00000009021328, y: 0.035816748, z: 0.9993584, w: 0.00000009021328}
+  m_LocalRotation: {x: 0.00000009356668, y: 0.035816748, z: 0.9993584, w: -0.0000000033534056}
   m_LocalPosition: {x: 0, y: 0.016987134, z: 0.0017437823}
   m_LocalScale: {x: 0.010000003, y: 0.010000003, z: 0.009999999}
   m_Children: []

@@ -1,40 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Ocs.Vehicle.DriveTrain;
 
-namespace Ocs.Vehicles
+namespace Ocs.Vehicle
 {
     public class Crawler : MonoBehaviour
     {
-        [SerializeField] private List<ArticulationInfo> _wheelJoints;
-        [SerializeField] private float _maxVelocity;
-        [SerializeField] private float _motorTorque;
+        [Header("- DriveTrain Setting -")]
+        [SerializeField] private CrawlerUnit _leftCrawler;
+        [SerializeField] private CrawlerUnit _rightCrawler;
+        
+        public float LeftCrawlerInput { get; set; }
+        public bool LeftReverse { get; set; }
+        public float RightCrawlerInput { get; set; }
+        public bool RightReverse { get; set; }
 
-        private float _targetVelocity;
-        private bool _reverseGear = false;
-        public float TargetVelocity { set => _targetVelocity = value; }
-        public bool ReverseGear { get => _reverseGear; set => _reverseGear = value; }
-
-        private void Drive(float velocity)
+        protected virtual void Update()
         {
-            if (this._reverseGear) velocity *= -1;
-            foreach (ArticulationInfo wheel in this._wheelJoints)
-            {
-                wheel.Rotate(velocity);
-            }
-        }
-
-        private void Start()
-        {
-            foreach (ArticulationInfo wheel in this._wheelJoints)
-            {
-                wheel.Initialize();
-            }
-        }
-
-        private void FixedUpdate()
-        {
-            Drive(this._maxVelocity * this._targetVelocity);
+            if(!LeftReverse) this._leftCrawler.Drive(LeftCrawlerInput * 100);
+            else this._leftCrawler.Drive(-LeftCrawlerInput * 100);
+            if (!RightReverse) this._rightCrawler.Drive(RightCrawlerInput * 100);
+            else this._rightCrawler.Drive(-RightCrawlerInput * 100);
         }
     }
 }

@@ -7,14 +7,7 @@ namespace Ocs.Vehicle.Equipment
     [System.Serializable]
     public class HeadLight
     {
-        public Light leftLight;
-        public Light rightLight;
-
-        public void SwitchLight()
-        {
-            bool state = !leftLight.enabled;
-            leftLight.enabled = state;
-            rightLight.enabled = state;
-        }
+        public Light light;
+        public void SwitchLight() => light.enabled = !light.enabled;
     }
 }

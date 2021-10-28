@@ -1,46 +1,81 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Ocs.Vehicle.DriveTrain;
+using Ocs.Vehicle.Equipment;
 
-namespace Ocs.Vehicles
+namespace Ocs.Vehicle
 {
-    public class Backhoe : MonoBehaviour
+    public class Backhoe : Crawler
     {
-        [SerializeField] private ArticulationInfo _base;
-        [SerializeField] private ArticulationInfo _boom;
-        [SerializeField] private ArticulationInfo _arm;
-        [SerializeField] private ArticulationInfo _end;
+        [Header("- Equipments Setting -")]
+        [SerializeField] protected List<HeadLight> _lights;
+        [SerializeField] protected float _headLightIntensity = 3.0f;
 
-        private float _baseJointInput;
-        private float _boomJointInput;
-        private float _armJointInput;
-        private float _endJointInput;
+        [SerializeField] protected List<Winker> _winkers;
+        [SerializeField] protected float _winkerFrequency = 5.0f;
+        [SerializeField] protected float _winkerIntensity = 3.0f;
 
-        public ArticulationInfo Base { get => _base; }
-        public ArticulationInfo Boom { get => _boom; }
-        public ArticulationInfo Arm { get => _arm; }
-        public ArticulationInfo End { get => _end; }
+        [SerializeField] protected Hone _hone;
 
-        public float BaseJointInput { set => _baseJointInput = value; }
-        public float BoomJointInput { set => _boomJointInput = value; }
-        public float ArmJointInput { set => _armJointInput = -value; }
-        public float EndJointInput { set => _endJointInput = -value; }
+        public float HeadLightIntensity { get => _headLightIntensity; }
+        public float WinkerFrequency { get => _winkerFrequency; }
+        public float WinkerIntensity { get => _winkerIntensity; }
+
+        [Header("- Arm Setting -")]
+        [SerializeField] private Transform _base;
+        [SerializeField] private CylinderDrivenJoint _boom;
+        [SerializeField] private CylinderDrivenJoint _arm;
+        [SerializeField] private CylinderDrivenJoint _end;
+        [SerializeField] private float _controlSpeed;
+
+        public float BaseInput { get; set; }
+        public float BoomInput { get; set; }
+        public float ArmInput { get; set; }
+        public float EndInput { get; set; }
+
+        public void SwitchLight()
+        {
+            foreach (HeadLight light in this._lights)
+            {
+                light.SwitchLight();
+            }
+        }
+        public void SwitchLeftWinker()
+        {
+            foreach (Winker winker in this._winkers)
+            {
+                winker.SwitchLeftWinker();
+            }
+        }
+        public void SwitchRightWinker()
+        {
+            foreach (Winker winker in this._winkers)
+            {
+                winker.SwitchRightWinker();
+            }
+        }
+        public void PlayHone()
+        {
+            _hone.Play();
+        }
+
 
         private void Start()
         {
-            this._base.Initialize();
-            this._boom.Initialize();
-            this._arm.Initialize();
-            this._end.Initialize();
+            this._boom.Init();
+            this._arm.Init();
+            this._end.Init();
         }
 
-        // Update is called once per frame
-        void Update()
+        
+        protected override void Update()
         {
-            this._base.Rotate(this._baseJointInput);
-            this._boom.Rotate(this._boomJointInput);
-            this._arm.Rotate(this._armJointInput);
-            this._end.Rotate(this._endJointInput);
+            base.Update();
+            this._base.Rotate(Vector3.up * BaseInput * this._controlSpeed);
+            this._boom.RotateJoint(BoomInput * this._controlSpeed);
+            this._arm.RotateJoint(ArmInput * this._controlSpeed);
+            this._end.RotateJoint(EndInput * this._controlSpeed);
         }
     }
 }
