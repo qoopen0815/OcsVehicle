@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Ocs.Vehicle.DriveTrain;
 
 namespace Ocs.Vehicle
 {
@@ -13,16 +14,16 @@ namespace Ocs.Vehicle
         private float _steeringVel = 0;
         
         [Header("- Work Setting -")]
-        [SerializeField] private CylinderDrivenJoint _arm;
+        [SerializeField] private CylinderDrivenJoint _boom;
         [SerializeField] private CylinderDrivenJoint _bucket;
         [SerializeField] private float _controlSpeed;
         
-        public float ArmInput { get; set; }
+        public float BoomInput { get; set; }
         public float BucketInput { get; set; }
 
         private void Start()
         {
-            this._arm.Init();
+            this._boom.Init();
             this._bucket.Init();
         }
 
@@ -48,7 +49,7 @@ namespace Ocs.Vehicle
                 winker.Blinky(base._winkerFrequency, base._winkerIntensity);
             }
 
-            this._arm.RotateJoint(ArmInput * _controlSpeed);
+            this._boom.RotateJoint(BoomInput * _controlSpeed);
             this._bucket.RotateJoint(BucketInput * _controlSpeed);
         }
     }
