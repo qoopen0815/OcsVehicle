@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Ocs.Vehicle.Equipment;
 
 namespace Ocs.Vehicle
 {
@@ -12,46 +13,46 @@ namespace Ocs.Vehicle
         [SerializeField] protected float _maxBrakeTorque = 1000.0f;
         [SerializeField] protected float _maxSteerAngle = 30.0f;
 
-        [Header("- Equipments Setting -")]
-        [SerializeField] protected List<Equipment.HeadLight> _lights;
-        [SerializeField] protected float _headLightIntensity = 3.0f;
-
-        [SerializeField] protected List<Equipment.Winker> _winkers;
-        [SerializeField] protected float _winkerFrequency = 5.0f;
-        [SerializeField] protected float _winkerIntensity = 3.0f;
-
-        [SerializeField] protected Equipment.Hone _hone;
-
         public float MaxAccelTorque { get => _maxAccelTorque; }
         public float MaxBrakeTorque { get => _maxBrakeTorque; }
         public float MaxSteerAngle { get => _maxSteerAngle; }
-
-        public float HeadLightIntensity { get => _headLightIntensity; }
-        public float WinkerFrequency { get => _winkerFrequency; }
-        public float WinkerIntensity { get => _winkerIntensity; }
 
         public float AccelInput { get; set; }
         public float BrakeInput { get; set; }
         public float SteerInput { get; set; }
         public bool ReverseGear { get; set; }
 
+        [Header("- Equipments Setting -")]
+        [SerializeField] protected List<HeadLight> _lights;
+        [SerializeField] protected float _headLightIntensity = 3.0f;
+
+        [SerializeField] protected List<Winker> _winkers;
+        [SerializeField] protected float _winkerFrequency = 5.0f;
+        [SerializeField] protected float _winkerIntensity = 3.0f;
+
+        [SerializeField] protected Hone _hone;
+
+        public float HeadLightIntensity { get => _headLightIntensity; }
+        public float WinkerFrequency { get => _winkerFrequency; }
+        public float WinkerIntensity { get => _winkerIntensity; }
+
         public void SwitchLight()
         {
-            foreach (Equipment.HeadLight light in this._lights)
+            foreach (HeadLight light in this._lights)
             {
                 light.SwitchLight();
             }
         }
         public void SwitchLeftWinker()
         {
-            foreach (Equipment.Winker winker in this._winkers)
+            foreach (Winker winker in this._winkers)
             {
                 winker.SwitchLeftWinker();
             }
         }
         public void SwitchRightWinker()
         {
-            foreach (Equipment.Winker winker in this._winkers)
+            foreach (Winker winker in this._winkers)
             {
                 winker.SwitchRightWinker();
             }
@@ -60,6 +61,7 @@ namespace Ocs.Vehicle
         {
             _hone.Play();
         }
+
 
         protected virtual void Update()
         {
