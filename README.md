@@ -1,6 +1,6 @@
 # OcsVehicle
 This is a tutorial repository for implementing heavy construction equipment in Unity.  
-It contains the heavy equipment model (.fbx) and controller (Input System), and the implemented heavy equipment (.prefab) is placed in the Resources folder.
+It contains the vehicle model (.fbx) and controller (Input System), and the implemented vehicles (.prefab) is placed in the Resources folder.
 
 ## Backhoe
 How to play : [Backhoe](https://github.com/qoopen0815/OcsVehicle/blob/main/Resources/HoeToPlay/Backhoe.png)
