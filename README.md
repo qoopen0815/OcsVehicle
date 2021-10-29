@@ -11,6 +11,8 @@ It contains the vehicle model (.fbx) and controller (Input System), and the impl
 - [ ] Crane
 - [ ] etc ...
 
+![クラス設計](https://user-images.githubusercontent.com/26988372/139453048-0e45e5c8-6763-4542-8dfe-35b01a0a0bf1.png)
+
 ## Backhoe
 How to play : [Backhoe](https://github.com/qoopen0815/OcsVehicle/blob/main/Resources/HoeToPlay/Backhoe.png)
 
