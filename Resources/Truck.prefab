@@ -197,7 +197,8 @@ MonoBehaviour:
   _maxBrakeTorque: 1000
   _maxSteerAngle: 30
   _lights:
-  - light: {fileID: 0}
+  - light: {fileID: 9101220534127058390}
+  - light: {fileID: 9036069630222320432}
   _headLightIntensity: 3
   _winkers:
   - leftWinker: {fileID: 6637197685867667838}
