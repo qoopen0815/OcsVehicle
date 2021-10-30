@@ -2,6 +2,12 @@
 This is a repository for implementing construction vehicles in Unity.  
 It contains the vehicle model (.fbx) and controller (Input System), and the implemented vehicles (.prefab) is placed in the [Resources](https://github.com/qoopen0815/OcsVehicle/tree/main/Resources) folder.  
 
+## Requirements
+- Animation Rigging (Unity Registry)
+
+## Installation
+Clone this repo into Assets folder.
+
 ## Status of implementation
 - [x] Backhoe
 - [x] Car
