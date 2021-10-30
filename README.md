@@ -4,6 +4,7 @@ It contains the vehicle model (.fbx) and controller (Input System), and the impl
 
 ## Requirements
 - Animation Rigging (Unity Registry)
+- Input System (Unity Registry)
 
 ## Installation
 Clone this repo into Assets folder.
