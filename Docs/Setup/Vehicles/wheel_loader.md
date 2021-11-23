@@ -41,5 +41,5 @@ WheelLoaderは下記のような構成を基本としています。
 WheelLoaderに使用しているC#スクリプトの一覧です。  
 下記以外にもRigidBodyなど様々なコンポーネントを使用しているので、詳しくはOcsVehicleに収録しているモデルを参照してください。
 
-- [WheelLoader.cs](../../../Scripts/vehicle/WheelLoader.cs)
+- [WheelLoader.cs](../../../Scripts/Vehicle/WheelLoader.cs)
 - [WheelLoaderController.cs](../../../Scripts/Controller/WheelLoaderController.cs)

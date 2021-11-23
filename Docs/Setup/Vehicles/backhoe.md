@@ -39,5 +39,5 @@ Backhoeに使用しているCrawlerはPrefabとして収録しています。
 Backhoeに使用しているC#スクリプトの一覧です。  
 下記以外にもRigidBodyなど様々なコンポーネントを使用しているので、詳しくはOcsVehicleに収録しているモデルを参照してください。
 
-- [Backhoe.cs](../../../Scripts/vehicle/Backhoe.cs)
+- [Backhoe.cs](../../../Scripts/Vehicle/Backhoe.cs)
 - [BackhoeController.cs](../../../Scripts/Controller/BackhoeController.cs)

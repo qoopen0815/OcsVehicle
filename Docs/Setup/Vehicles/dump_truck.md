@@ -45,5 +45,5 @@ DumpTruckは下記のような構成を基本としています。
 DumpTruckに使用しているC#スクリプトの一覧です。  
 下記以外にもRigidBodyなど様々なコンポーネントを使用しているので、詳しくはOcsVehicleに収録しているモデルを参照してください。
 
-- [DumpTruck.cs](../../../Scripts/vehicle/DumpTruck.cs)
+- [DumpTruck.cs](../../../Scripts/Vehicle/DumpTruck.cs)
 - [DumpTruckController.cs](../../../Scripts/Controller/DumpTruckController.cs)
