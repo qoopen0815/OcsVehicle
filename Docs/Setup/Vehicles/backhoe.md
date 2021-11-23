@@ -1,9 +1,42 @@
-# Backhoeの作成手順
-OCSで使用するBackhoeの作成方法をまとめています。  
+# Backhoeについて
+OCSで使用するBackhoeの情報をまとめています。  
 OcsVehicleでは参考用にBackhoeを１台収録しているのでご確認ください。
 
-※この手順が正解というわけではありません。改善点があれば[Issue](https://github.com/Field-Robotics-Japan/OcsVehicle/issues)へのコメントをよろしくお願い致します。
+※改善点があれば[Issue](https://github.com/Field-Robotics-Japan/OcsVehicle/issues)へのコメントをよろしくお願い致します。
+
+<img src="https://user-images.githubusercontent.com/26988372/139288755-bf3a7cc7-95d9-4437-8a0a-44b3efda29b7.gif" width=90%>
 
 ## Topics
-- Prefabの構成
+- 操作方法
+- Prefabの基本構成
 - コンポーネント一覧
+
+## 操作方法
+<img src="../../HowToPlay/Backhoe.png" width=70%>
+
+## Prefabの基本構成
+Backhoeは下記のような構成を基本としています。  
+必要に応じてリンクの追加や親子関係の変更をしてください。
+
+- Backhoe(root)
+  - Base
+    - Body
+      - Boom
+        - Arm
+          - Bucket
+    - LeftCrawler(Prefab: Crawler)
+    - RightCrawler(Prefab: Crawler)
+
+Backhoeに使用しているCrawlerはPrefabとして収録しています。  
+（球体(Sphere)を6個並べただけですが・・）
+
+- Crawler(root)
+  - Sphere x6
+
+
+## コンポーネント一覧
+Backhoeに使用しているC#スクリプトの一覧です。  
+下記以外にもRigidBodyなど様々なコンポーネントを使用しているので、詳しくはOcsVehicleに収録しているモデルを参照してください。
+
+- [Backhoe.cs](https://github.com/Field-Robotics-Japan/OcsVehicle/blob/main/Scripts/Vehicle/Backhoe.cs)
+- [BackhoeController.cs](https://github.com/Field-Robotics-Japan/OcsVehicle/blob/main/Scripts/Controller/BackhoeController.cs)
