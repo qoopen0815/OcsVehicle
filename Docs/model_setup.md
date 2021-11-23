@@ -1,6 +1,7 @@
 # 重機モデルの作成（Unity）
 ここでは[事前に準備したFbxモデル](./model_presetup.md)をOCS環境で使えるようにするまでの手順をまとめています。
-このやり方が正解というわけではないので、改善点があれば[Issue](https://github.com/qoopen0815/OcsVehicle/issues)へのコメントをよろしくお願い致します。
+
+※この手順が正解というわけではありません。改善点があれば[Issue](https://github.com/Field-Robotics-Japan/OcsVehicle/issues)へのコメントをよろしくお願い致します。
 
 ## Topics
 - Fbxファイルインポート
