@@ -17,6 +17,6 @@
 ---
 ## 重機のセットアップ
 
-- [Backhoe](./Vehicles/backhoe_setup.md)
-- [Wheel Loader](./Vehicles/wheelloader_setup.md)
-- [Dump Truck](./Vehicles/dump_setup.md)
+- [Backhoe](./Vehicles/backhoe.md)
+- [Wheel Loader](./Vehicles/wheel_loader.md)
+- [Dump Truck](./Vehicles/dump_truck.md)
