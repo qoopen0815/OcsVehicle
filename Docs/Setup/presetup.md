@@ -64,4 +64,4 @@ Tips :
 <img src="https://user-images.githubusercontent.com/26988372/142980115-f119d3b6-d747-4f67-80b4-495b6570f84f.png" width=90%>
 
 ---
-## NEXT：[Unityでの作業](./model_setup.md)
+## NEXT：[Unityでの作業](./setup.md)
