@@ -28,11 +28,17 @@
 ### スケール修正
 パーツのスケールをすべて1.0にします。スケールを変更して大きさが狂った場合は編集モードで頂点の位置を修正してください。
 
-Tips : 3Dカーソルが便利です。
+Tips : 頂点の修正には3Dカーソルが便利です。
+
+<img src="https://user-images.githubusercontent.com/26988372/142984580-83eafd43-007c-4f61-83fd-14760d01e55e.png" width=90%>
 
 ### モデル原点の修正
 Unityの左手座標系に対応させるために、Blenderでは「**前方：-Y、右方：-X、上方：+Z**」となるようにパーツの向きを修正してください。  
 また、各パーツの回転軸が原点とずれているとUnityでの作業工数が増えるので、必ずモデル原点をジョイント位置に合わせてください。
+
+<img src="https://user-images.githubusercontent.com/26988372/142986475-89dbde1e-578c-4f98-8ea6-0748cfee1931.png" width=80%>
+
+<img src="https://user-images.githubusercontent.com/26988372/142985058-547f291b-6190-4074-8342-e7524bbf6871.png" width=80%>
 
 ### テクスチャ
 パーツごとにテクスチャを割り当てていきます。画像を使ってオリジナルのテクスチャにしてもいいし、マテリアルを適用して好きな色を塗るのも良いです。  
@@ -50,7 +56,7 @@ Tips :
 次に、トランスフォームの「!実験的機能!トランスフォーム適用」のチェックボックスをオンにします。  
 最後に出力先を指定してFbxファイルを出力すれば完了です。
 
-![image](https://user-images.githubusercontent.com/26988372/142980115-f119d3b6-d747-4f67-80b4-495b6570f84f.png)
+<img src="https://user-images.githubusercontent.com/26988372/142980115-f119d3b6-d747-4f67-80b4-495b6570f84f.png" width=90%>
 
 ---
 ## NEXT：[Unityでの作業]()
